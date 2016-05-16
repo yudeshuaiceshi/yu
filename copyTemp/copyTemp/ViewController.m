@@ -31,7 +31,7 @@
 
     
     NSArray *array1 = [NSArray arrayWithObjects:@"a",@"b",@"c",nil];
-    　　NSArray *arrayCopy1 = [array1 copy];
+    　　NSArray    *arrayCopy1 = [array1 copy];
     NSString *mm =[array1 mutableCopy];
     NSArray *arr ;
     
@@ -39,6 +39,9 @@
     g.arr=[NSArray arrayWithArray:array1];
     NSLog(@"%@",g.arr);
     [g woshifangfa];
+    
+    
+    
     
 }
 
