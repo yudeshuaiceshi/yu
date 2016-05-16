@@ -39,7 +39,9 @@
     g.arr=[NSArray arrayWithArray:array1];
     NSLog(@"%@",g.arr);
     [g woshifangfa];
-       
+    
+    
+    
     
     
     
