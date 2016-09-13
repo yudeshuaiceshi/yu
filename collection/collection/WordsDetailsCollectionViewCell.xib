@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="wordsDetailsCell" id="gTV-IL-0wX" customClass="WordsDetailsCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="208"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="208"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XGJ-6l-rjz">
+                        <rect key="frame" x="0.0" y="0.0" width="130" height="173"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLx-ds-ya9">
+                        <rect key="frame" x="0.0" y="173" width="130" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="qCz-pK-dhF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="GLx-ds-ya9" secondAttribute="bottom" id="1Bf-Tk-eyz"/>
+                <constraint firstItem="XGJ-6l-rjz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9QD-B7-DZN"/>
+                <constraint firstAttribute="trailing" secondItem="XGJ-6l-rjz" secondAttribute="trailing" id="BZ0-cn-i5S"/>
+                <constraint firstItem="GLx-ds-ya9" firstAttribute="top" secondItem="XGJ-6l-rjz" secondAttribute="bottom" id="CBy-rW-ROD"/>
+                <constraint firstItem="GLx-ds-ya9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HRh-S8-fe3"/>
+                <constraint firstAttribute="trailing" secondItem="GLx-ds-ya9" secondAttribute="trailing" id="JHf-4H-mrt"/>
+                <constraint firstItem="GLx-ds-ya9" firstAttribute="top" secondItem="XGJ-6l-rjz" secondAttribute="bottom" id="kLS-nN-BIp"/>
+                <constraint firstItem="XGJ-6l-rjz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="p9V-EO-pXP"/>
+            </constraints>
+            <size key="customSize" width="129" height="205"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="CBy-rW-ROD"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imageView" destination="XGJ-6l-rjz" id="ale-C8-DWv"/>
+                <outlet property="nameLabel" destination="GLx-ds-ya9" id="8D4-Gr-1B7"/>
+            </connections>
+            <point key="canvasLocation" x="319.5" y="360"/>
+        </collectionViewCell>
+    </objects>
+</document>
